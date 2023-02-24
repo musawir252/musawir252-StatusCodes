@@ -18,7 +18,8 @@ public class JavalinSingleton {
         app.get("/client-side-err", ctx -> {
         
             //write logic here
-            
+            //Returning the status of "Client side error"
+            ctx.status(400);
         });
 
         return app;
